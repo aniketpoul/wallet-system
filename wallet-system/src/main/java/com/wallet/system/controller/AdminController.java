@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @PreAuthorize("hasRole('ADMIN')")
 public class AdminController {
 
+    // add a constructor to inject the walletservice class
     private final WalletService walletService;
 
     @GetMapping("/wallets")
